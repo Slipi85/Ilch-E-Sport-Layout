@@ -7,6 +7,7 @@ class Config extends \Ilch\Config\Install
     public $config = [
         'name' => 'E-Sport Layout',
         'version' => '1.0.0',
+        'ilchCore' => '2.1.32',
         'author' => 'Slipi',
         'link' => 'https://www.ilch.de',
         'desc' => 'Das E-Sport Layout ist ein moderns Clan-Layout mit dazugehörigen Modul "E-Sport-Layout". MIT diesem Modul haben sie die Möglichkeit denn Slider sowie Logo zu ändern. Dem Slider können sie bis zu 3 Bilder hinzufügen, bei einem Bild wird der Slider deaktiviert und haben damit einen Header, auch der Inhalt der einzelnen Bilder können sie ändern, sowie Buttons (Farbe, Hover und link).',
