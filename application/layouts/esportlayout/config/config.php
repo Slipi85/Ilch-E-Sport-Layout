@@ -108,26 +108,6 @@ class Config extends \Ilch\Config\Install
                 'default' => 'Stet clita kasd gubergren',
                 'description' => '',
                 ],
-            'slider4' => [
-                'type' => 'text',
-                'default' => 'application/layouts/privatlayout/images/banner/pic4.jpg',
-                'description' => 'Empfehlung: 680px × 280px',
-                ],
-            'slider4text' => [
-                'type' => 'text',
-                'default' => 'Sed ut perspiciatis unde omnis iste natus error sit',
-                'description' => '',
-                ],
-            'slider5' => [
-                'type' => 'text',
-                'default' => 'application/layouts/privatlayout/images/banner/pic5.jpg',
-                'description' => 'Empfehlung: 680px × 280px',
-                ],
-            'slider5text' => [
-                'type' => 'text',
-                'default' => 'Quis autem vel eum iure reprehenderit qui in ea',
-                'description' => '',
-                ],
         ],
         'modulekey' => 'esportlayout'
     ];
