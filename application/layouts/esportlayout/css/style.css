@@ -346,6 +346,7 @@ a:hover,
 }
 .news-body {
 	padding:15px;
+	min-height: 192px;
 }
 .news-body h2, .news-body h3 {
 	font-size:14px
@@ -816,5 +817,8 @@ footer a.totop:hover .innertop{
 	}
 	.news-img {
 		min-height:350px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 }
