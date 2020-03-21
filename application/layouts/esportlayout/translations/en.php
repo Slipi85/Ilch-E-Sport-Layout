@@ -5,5 +5,5 @@ return [
     'imprint' => 'Imprint',
     'privacy' => 'Privacy',
 	'descSlider' => 'Recommend: 680px × 280px',
-	'descSliderText' => 'max. 255 characters',
+	'descSliderText' => 'max. 40 characters',
 ];
