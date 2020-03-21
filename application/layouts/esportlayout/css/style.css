@@ -605,7 +605,11 @@ footer a.totop:hover .innertop{
 
 /*---------Main Aere END----------*/
 /*@media*/
-
+@media (max-width:768px) {
+	.flex-viewport {
+		height:320px;
+	}
+}
 @media (min-width:420px) {
 	#slider .esporth1 {
 		font-size:34px;
@@ -816,9 +820,10 @@ footer a.totop:hover .innertop{
 		font-size:24px
 	}
 	.news-img {
-		min-height:350px;
+		height:350px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		overflow: hidden;
 	}
 }

@@ -28,7 +28,8 @@
         }
         });
       });
-      </script>
+  </script>
+
 </head>
 
 <body id="top">
@@ -43,10 +44,10 @@
   <!-- header area -->
   <header class="header_slider">
     <div class="navigation">
-      <div class="ilch-flex">
+      <div class="ilch-flex container">
           <!-- navigation area -->
           <div id="banner">
-            <li><a href="/"><img id="logo" src="<?=$this->getBox('esportlayout', 'logo'); ?>" alt="logo"></a></li>
+		  <ul class="list-unstyled"><li><a href="/"><img id="logo" src="<?=$this->getBaseUrl($this->getLayoutSetting('logourl')) ?>" alt="logo"></a></li></ul>
           </div>
           <div id="topnav" role="navigation">
             <div class="menu-toggle pull-right"><i class="fa fa-bars" aria-hidden="true"></i></div>
@@ -71,13 +72,7 @@
     </div>
 
     <section id="slider" class="clearfix">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 slider-titel">
-          </div>
-        </div>
-      </div>
-        <?=$this->getBox('esportlayout', 'slider'); ?>
+        <?php include('slider.php'); ?>
     </section>
 
   </header>
@@ -121,10 +116,10 @@
       </div>
       <div class="col-xs-12 col-sm-6 text-center">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="<?=$this->getUrl() ?>index.php/contact/index/index">Kontakt</a></li>
-          <li><a href="<?=$this->getUrl() ?>index.php/imprint/index/index">Impressum</a></li>
-          <li><a href="<?=$this->getUrl() ?>index.php/privacy/index/index">Datenschutz</a></li>
+          <li><a href="/"><?=$this->getTrans('home') ?></a></li>
+          <li><a href="<?=$this->getUrl() ?>index.php/contact/index/index"><?=$this->getTrans('contact') ?></a></li>
+          <li><a href="<?=$this->getUrl() ?>index.php/imprint/index/index"><?=$this->getTrans('imprint') ?></a></li>
+          <li><a href="<?=$this->getUrl() ?>index.php/privacy/index/index"><?=$this->getTrans('privacy') ?></a></li>
         </ul>
       </div>
       <a href="#top" class="totop"><div class="innertop"></div></a>

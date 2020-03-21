@@ -6,8 +6,8 @@ class Config extends \Ilch\Config\Install
 {
     public $config = [
         'name' => 'E-Sport Layout',
-        'version' => '1.0.1',
-        'ilchCore' => '2.1.32',
+        'version' => '1.0.2',
+		'ilchCore' => '2.1.32',
         'author' => 'Slipi',
         'link' => 'https://www.ilch.de',
         'desc' => 'Das E-Sport Layout ist ein moderns Clan-Layout mit dazugehörigen Modul "E-Sport-Layout". MIT diesem Modul haben sie die Möglichkeit denn Slider sowie Logo zu ändern. Dem Slider können sie bis zu 3 Bilder hinzufügen, bei einem Bild wird der Slider deaktiviert und haben damit einen Header, auch der Inhalt der einzelnen Bilder können sie ändern, sowie Buttons (Farbe, Hover und link).',
@@ -20,17 +20,7 @@ class Config extends \Ilch\Config\Install
         'settings' => [
             'logourl' => [
                 'type' => 'mediaselection',
-                'default' => 'application/layouts/privatlayout/images/logo.png',
-                'description' => '',
-                ],
-            'title' => [
-                'type' => 'text',
-                'default' => 'Free Private Layout',
-                'description' => '',
-                ],
-            'titletext' => [
-                'type' => 'ckeditorbbcode',
-                'default' => 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+                'default' => 'application/layouts/esportlayout/images/logo1.png',
                 'description' => '',
                 ],
             'button1' => [
@@ -43,6 +33,16 @@ class Config extends \Ilch\Config\Install
                 'default' => 'https://www.ilch.de/',
                 'description' => '',
                 ],
+            'button1color' => [
+              	'type' => 'colorpicker',
+              	'default' => '#ff0000',
+                'description' => '',
+              	],
+            'button1hover' => [
+                'type' => 'colorpicker',
+                'default' => '#141414',
+                'description' => '',
+              	],
             'button1switch' => [
                 'type' => 'flipswitch',
                 'default' => '1',
@@ -58,6 +58,16 @@ class Config extends \Ilch\Config\Install
                 'default' => 'https://www.google.de/',
                 'description' => '',
                 ],
+            'button2color' => [
+            	  'type' => 'colorpicker',
+              	'default' => '#ff0000',
+              	'description' => '',
+              	],
+            'button2hover' => [
+                'type' => 'colorpicker',
+                'default' => '#141414',
+                'description' => '',
+              	],
             'button2switch' => [
                 'type' => 'flipswitch',
                 'default' => '1',
@@ -73,6 +83,16 @@ class Config extends \Ilch\Config\Install
                 'default' => 'https://github.com/IlchCMS/Ilch-2.0/wiki',
                 'description' => '',
                 ],
+            'button3color' => [
+              	'type' => 'colorpicker',
+              	'default' => '#ff0000',
+              	'description' => '',
+              	],
+            'button3hover' => [
+              'type' => 'colorpicker',
+              'default' => '#141414',
+              'description' => '',
+            	],
             'button3switch' => [
                 'type' => 'flipswitch',
                 'default' => '1',
@@ -80,36 +100,50 @@ class Config extends \Ilch\Config\Install
                 ],
             'slider1' => [
                 'type' => 'text',
-                'default' => 'application/layouts/privatlayout/images/banner/pic1.jpg',
-                'description' => 'Empfehlung: 680px × 280px',
+                'default' => 'application/layouts/esportlayout/images/banner/pic1.jpg',
+                'description' => 'descSlider',
+                ],
+            'slider1heading' => [
+                'type' => 'text',
+                'default' => 'Ilch E-Sport Layout',
+                'description' => '',
                 ],
             'slider1text' => [
                 'type' => 'text',
-                'default' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elitr',
-                'description' => '',
+                'default' => 'Danke das sie sich für das Ilch E-Sport Layout entschieden haben.',
+                'description' => 'descSliderText',
                 ],
             'slider2' => [
                 'type' => 'text',
-                'default' => 'application/layouts/privatlayout/images/banner/pic2.jpg',
-                'description' => 'Empfehlung: 680px × 280px',
+                'default' => 'application/layouts/esportlayout/images/banner/pic2.jpg',
+                'description' => 'descSlider',
+                ],
+            'slider2heading' => [
+                'type' => 'text',
+                'default' => 'Ilch E-Sport Layout',
+                'description' => '',
                 ],
             'slider2text' => [
                 'type' => 'text',
-                'default' => 'At vero eos et accusam et justo duo dolores et ea rebum',
-                'description' => '',
+                'default' => 'Im Admincenter kann der Slider sowie das Logo nach ihren wünschen geändert werden',
+                'description' => 'descSliderText',
                 ],
             'slider3' => [
                 'type' => 'text',
-                'default' => 'application/layouts/privatlayout/images/banner/pic3.jpg',
-                'description' => 'Empfehlung: 680px × 280px',
+                'default' => 'application/layouts/esportlayout/images/banner/pic3.jpg',
+                'description' => 'descSlider',
+                ],
+            'slider3heading' => [
+                'type' => 'text',
+                'default' => 'Ilch E-Sport Layout',
+                'description' => '',
                 ],
             'slider3text' => [
                 'type' => 'text',
-                'default' => 'Stet clita kasd gubergren',
-                'description' => '',
+                'default' => 'Sollte es Probleme geben, besuchen sie uns im Forum, und ihnen wird geholfen.',
+                'description' => 'descSliderText',
                 ],
         ],
-        'modulekey' => 'esportlayout'
     ];
 
     public function getUpdate($installedVersion)

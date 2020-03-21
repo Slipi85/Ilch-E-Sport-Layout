@@ -4,4 +4,6 @@ return [
     'contact' => 'Contact',
     'imprint' => 'Imprint',
     'privacy' => 'Privacy',
+	'descSlider' => 'Recommend: 680px × 280px',
+	'descSliderText' => 'max. 255 characters',
 ];
