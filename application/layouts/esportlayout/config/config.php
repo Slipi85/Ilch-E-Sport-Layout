@@ -10,7 +10,7 @@ class Config extends \Ilch\Config\Install
 		'ilchCore' => '2.1.32',
         'author' => 'Slipi',
         'link' => 'https://www.ilch.de',
-        'desc' => 'Das E-Sport Layout ist ein moderns Clan-Layout mit dazugehörigen Modul "E-Sport-Layout". MIT diesem Modul haben sie die Möglichkeit denn Slider sowie Logo zu ändern. Dem Slider können sie bis zu 3 Bilder hinzufügen, bei einem Bild wird der Slider deaktiviert und haben damit einen Header, auch der Inhalt der einzelnen Bilder können sie ändern, sowie Buttons (Farbe, Hover und link).',
+        'desc' => 'Das E-Sport Layout ist ein moderns Clan-Layout. Dem Slider können sie bis zu 3 Bilder hinzufügen. Wird nur 1 Image von 3 Image hinzugefügt, haben sie einen normalen Header. Auch der Inhalt der einzelnen Image kann geändert ändern, sowie Buttons (Farbe, Hover und link).',
         'layouts' => [
             'panel' => [
                 ['module' => 'user', 'controller' => 'login'],
