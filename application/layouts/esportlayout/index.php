@@ -29,7 +29,10 @@
         });
       });
   </script>
-
+  <style>
+  a {color:<?php echo $this->getLayoutSetting('color')?>;}
+  a:hover {color:<?php echo $this->getLayoutSetting('hover')?>;}
+  </style>
 </head>
 
 <body id="top">

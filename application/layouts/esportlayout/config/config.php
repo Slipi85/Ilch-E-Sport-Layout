@@ -6,8 +6,8 @@ class Config extends \Ilch\Config\Install
 {
     public $config = [
         'name' => 'E-Sport Layout',
-        'version' => '1.0.2',
-		'ilchCore' => '2.1.32',
+        'version' => '1.0.3',
+		    'ilchCore' => '2.1.32',
         'author' => 'Slipi',
         'link' => 'https://www.ilch.de',
         'desc' => 'Das E-Sport Layout ist ein moderns Clan-Layout. Dem Slider können sie bis zu 3 Bilder hinzufügen. Wird nur 1 Image von 3 Image hinzugefügt, haben sie einen normalen Header. Auch der Inhalt der einzelnen Image kann geändert ändern, sowie Buttons (Farbe, Hover und link).',
@@ -143,6 +143,11 @@ class Config extends \Ilch\Config\Install
                 'default' => 'Sollte es Probleme geben, besuchen sie uns im Forum, und ihnen wird geholfen.',
                 'description' => 'descSliderText',
                 ],
+            'slider3text' => [
+                'type' => 'text',
+                'default' => 'Sollte es Probleme geben, besuchen sie uns im Forum, und ihnen wird geholfen.',
+                'description' => 'descSliderText',
+                ]
         ],
     ];
 
