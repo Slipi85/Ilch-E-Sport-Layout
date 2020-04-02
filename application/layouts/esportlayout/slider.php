@@ -1,5 +1,6 @@
 <div class="flexslider">
   <ul class="slides">
+    <?php if ($this->getLayoutSetting('slider1') != '') { ?>
     <li>
       <img src="<?=$this->getBaseUrl($this->getLayoutSetting('slider1')) ?>" alt="Picture 1" align="middle"/>
       <div class="container slider-content">
@@ -10,6 +11,8 @@
         </div>
       </div>
     </li>
+  <?php } ?>
+  <?php if ($this->getLayoutSetting('slider2') != '') { ?>
     <li>
       <img src="<?=$this->getBaseUrl($this->getLayoutSetting('slider2')) ?>" alt="Picture 2" align="middle"/>
       <div class="container slider-content">
@@ -20,6 +23,8 @@
         </div>
       </div>
     </li>
+  <?php } ?>
+  <?php if ($this->getLayoutSetting('slider3') != '') { ?>
     <li>
       <img src="<?=$this->getBaseUrl($this->getLayoutSetting('slider3')) ?>" alt="Picture 3" align="middle"/>
       <div class="container slider-content">
@@ -30,6 +35,7 @@
         </div>
       </div>
     </li>
+    <?php } ?>
   </ul>
   <style>
     .btn1 {background:<?php echo $this->getLayoutSetting('button1color')?>;}.btn1:hover {background:<?php echo $this->getLayoutSetting('button1hover')?>;}
