@@ -7,7 +7,7 @@ class Config extends \Ilch\Config\Install
     public $config = [
         'name' => 'E-Sport Layout',
         'version' => '1.0.4',
-		    'ilchCore' => '2.1.32',
+        'ilchCore' => '2.1.32',
         'author' => 'Slipi',
         'link' => 'https://www.ilch.de',
         'desc' => 'Das E-Sport Layout ist ein moderns Clan-Layout. Dem Slider können sie bis zu 3 Bilder hinzufügen. Wird nur 1 Image von 3 Image hinzugefügt, haben sie einen normalen Header. Auch der Inhalt der einzelnen Image kann geändert ändern, sowie Buttons (Farbe, Hover und link).',
@@ -15,7 +15,7 @@ class Config extends \Ilch\Config\Install
             'panel' => [
                 ['module' => 'user', 'controller' => 'login'],
                 ['module' => 'user', 'controller' => 'regist'],
-            ]//only for example
+            ]
         ],
         'settings' => [
             'logourl' => [
@@ -34,15 +34,15 @@ class Config extends \Ilch\Config\Install
                 'description' => '',
                 ],
             'button1color' => [
-              	'type' => 'colorpicker',
-              	'default' => '#ff0000',
+                'type' => 'colorpicker',
+                'default' => '#ff0000',
                 'description' => '',
-              	],
+                ],
             'button1hover' => [
                 'type' => 'colorpicker',
                 'default' => '#141414',
                 'description' => '',
-              	],
+                ],
             'button1switch' => [
                 'type' => 'flipswitch',
                 'default' => '1',
@@ -59,15 +59,15 @@ class Config extends \Ilch\Config\Install
                 'description' => '',
                 ],
             'button2color' => [
-            	  'type' => 'colorpicker',
-              	'default' => '#ff0000',
-              	'description' => '',
-              	],
+                'type' => 'colorpicker',
+                'default' => '#ff0000',
+                'description' => '',
+                ],
             'button2hover' => [
                 'type' => 'colorpicker',
                 'default' => '#141414',
                 'description' => '',
-              	],
+                ],
             'button2switch' => [
                 'type' => 'flipswitch',
                 'default' => '1',
@@ -84,15 +84,15 @@ class Config extends \Ilch\Config\Install
                 'description' => '',
                 ],
             'button3color' => [
-              	'type' => 'colorpicker',
-              	'default' => '#ff0000',
-              	'description' => '',
-              	],
+                'type' => 'colorpicker',
+                'default' => '#ff0000',
+                'description' => '',
+                ],
             'button3hover' => [
-              'type' => 'colorpicker',
-              'default' => '#141414',
-              'description' => '',
-            	],
+                'type' => 'colorpicker',
+                'default' => '#141414',
+                'description' => '',
+                ],
             'button3switch' => [
                 'type' => 'flipswitch',
                 'default' => '1',

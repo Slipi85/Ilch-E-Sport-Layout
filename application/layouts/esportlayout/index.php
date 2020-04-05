@@ -40,7 +40,7 @@
   <!-- top bar -->
   <div class="topbar">
     <div class="userpanel text-center">
-	  <?=$this->getBox('user', 'login', 'userpanel'); ?>
+      <?=$this->getBox('user', 'login', 'userpanel'); ?>
     </div>
   </div>
 
@@ -50,25 +50,25 @@
       <div class="ilch-flex container">
           <!-- navigation area -->
           <div id="banner">
-		  <ul class="list-unstyled"><li><a href="/"><img id="logo" src="<?=$this->getBaseUrl($this->getLayoutSetting('logourl')) ?>" alt="logo"></a></li></ul>
+          <ul class="list-unstyled"><li><a href="/"><img id="logo" src="<?=$this->getBaseUrl($this->getLayoutSetting('logourl')) ?>" alt="logo"></a></li></ul>
           </div>
           <div id="topnav" role="navigation">
             <div class="menu-toggle pull-right"><i class="fa fa-bars" aria-hidden="true"></i></div>
             <ul class="srt-menu" id="menu-main-navigation">
-      	    <?php
+            <?php
               echo $this->getMenu(1,
-      		  '<li><a href="#" title="%s">%s</a>%c</li>',
-      		  [
-      		    'menus' => [
-      			  'ul-class-root' => '',
-      			  'ul-class-child' => '',
-      			  'allow-nesting' => false
-      			],
-      			'boxes' => [
-      			  'render' => false
-      			],
-      		  ]);
-      		?>
+              '<li><a href="#" title="%s">%s</a>%c</li>',
+              [
+                'menus' => [
+                  'ul-class-root' => '',
+                  'ul-class-child' => '',
+                  'allow-nesting' => false
+                ],
+                'boxes' => [
+                  'render' => false
+                ],
+              ]);
+            ?>
             </ul>
           </div><!-- end navigation -->
       </div>
@@ -95,10 +95,10 @@
         <div class="col-xs-12 col-sm-3 sidebar">
           <?php
           echo $this->getMenu(2,
-    	    '<div class="panel panel-default">
-    		  <div class="box-header">%s</div>
-    		  <div class="box-body">%c</div>
-    		</div>');
+            '<div class="panel panel-default">
+            <div class="box-header">%s</div>
+            <div class="box-body">%c</div>
+            </div>');
           ?>
         </div>
       </div>
@@ -109,20 +109,20 @@
 
   <!-- footer area -->
   <footer>
-	<div class="container clearfix">
+    <div class="container clearfix">
       <div class="col-xs-12 col-sm-6 text-center">
         <ul>
           <li>&copy; Ilch 2.0</li>
           <li>Ilch E-Sport Layout</li>
-          <li>CMS by <a href="http://www.ilch.de/">Ilch</a></li>
+          <li>CMS by <a href="https://www.ilch.de/">Ilch</a></li>
         </ul>
       </div>
       <div class="col-xs-12 col-sm-6 text-center">
         <ul>
           <li><a href="/"><?=$this->getTrans('home') ?></a></li>
-          <li><a href="<?=$this->getUrl() ?>index.php/contact/index/index"><?=$this->getTrans('contact') ?></a></li>
-          <li><a href="<?=$this->getUrl() ?>index.php/imprint/index/index"><?=$this->getTrans('imprint') ?></a></li>
-          <li><a href="<?=$this->getUrl() ?>index.php/privacy/index/index"><?=$this->getTrans('privacy') ?></a></li>
+          <li><a href="<?=$this->getUrl(['module' => 'contact', 'controller' => 'index', 'action' => 'index']) ?>"><?=$this->getTrans('contact') ?></a></li>
+          <li><a href="<?=$this->getUrl(['module' => 'imprint', 'controller' => 'index', 'action' => 'index']) ?>"><?=$this->getTrans('imprint') ?></a></li>
+          <li><a href="<?=$this->getUrl(['module' => 'privacy', 'controller' => 'index', 'action' => 'index']) ?>"><?=$this->getTrans('privacy') ?></a></li>
         </ul>
       </div>
       <a href="#top" class="totop"><div class="innertop"></div></a>
