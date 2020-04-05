@@ -130,7 +130,7 @@
   </footer><!-- end footer area -->
 
   <?=$this->getFooter() ?>
-  <script>window.jQuery || document.write('<script src="<?=$this->getLayoutUrl('js/jquery.min.js') ?>">\x3C/script>')</script>
+  <script src="<?=$this->getVendorUrl('components/jqueryui/jquery-ui.min.js') ?>"></script>
   <script src="<?=$this->getLayoutUrl('js/jquery.flexslider.min.js') ?>" defer></script>
   <!-- settings -->
   <script src="<?=$this->getLayoutUrl('js/main.js') ?>"></script>
