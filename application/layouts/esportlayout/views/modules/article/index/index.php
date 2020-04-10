@@ -41,9 +41,9 @@ if ($this->getUser()) {
                   <?php if (!empty($imageSource)): ?>
                       <figcaption class="article_image_source"><?=$this->getTrans('imageSource') ?>: <?=$this->escape($imageSource) ?></figcaption>
                   <?php endif; ?>
-                <?php else: ?>
-                    <img class="article_image" src="/ilchtest/application/layouts/esportlayout/images/news.png">
               </figure>
+          <?php else: ?>
+            <img class="article_image" src="<?=$this->getBaseUrl('application/layouts/esportlayout/images/news.png') ?>">
           <?php endif; ?>
         </div>
         <div class="news-body">

@@ -6,7 +6,7 @@ class Config extends \Ilch\Config\Install
 {
     public $config = [
         'name' => 'E-Sport Layout',
-        'version' => '1.0.5',
+        'version' => '1.0.6',
         'ilchCore' => '2.1.32',
         'author' => 'Slipi',
         'link' => 'https://www.ilch.de',
@@ -147,7 +147,17 @@ class Config extends \Ilch\Config\Install
                 'type' => 'text',
                 'default' => 'Sollte es Probleme geben, besuchen sie uns im Forum, und ihnen wird geholfen.',
                 'description' => 'descSliderText',
-                ]
+                ],
+            'color' => [
+                'type' => 'colorpicker',
+                'default' => '#ffffff',
+                'description' => 'linkColorDescp',
+              ],
+            'hover' => [
+                'type' => 'colorpicker',
+                'default' => '#666666',
+                'description' => 'linkHoverDescp',
+              ],
         ],
     ];
 
