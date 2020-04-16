@@ -31,8 +31,8 @@ return [
     'slider3' => 'Dritter Slider',
     'slider3heading' => 'Überschrifft Slider',
     'slider3text' => 'Text Slider',
-    'linkColor' => 'Farbe für verlinkungen',
-    'linkHover' => 'Hover für verlinkungen',
+    'linkColor' => 'Farbe für Verlinkungen',
+    'linkHover' => 'Hover für Verlinkungen',
     'linkColorDescp' => 'Hier können all die Verlinkungen eine Farbe zugeteilt werden',
     'linkHoverDescp' => 'Hier können all die Verlinkungen einen Hover zugeteilt werden',
 ];
