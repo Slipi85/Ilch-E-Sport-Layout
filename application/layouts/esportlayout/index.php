@@ -30,8 +30,8 @@
       });
   </script>
   <style>
-  a {color:<?php echo $this->getLayoutSetting('color')?>;}
-  a:hover {color:<?php echo $this->getLayoutSetting('hover')?>;}
+  a {color:<?=$this->getLayoutSetting('color') ?>;}
+  a:hover {color:<?=$this->getLayoutSetting('hover') ?>;}
   </style>
 </head>
 

@@ -99,7 +99,7 @@ class Config extends \Ilch\Config\Install
                 'description' => '',
                 ],
             'slider1' => [
-                'type' => 'text',
+                'type' => 'mediaselection',
                 'default' => 'application/layouts/esportlayout/images/banner/pic1.jpg',
                 'description' => 'descSlider',
                 ],
@@ -114,7 +114,7 @@ class Config extends \Ilch\Config\Install
                 'description' => 'descSliderText',
                 ],
             'slider2' => [
-                'type' => 'text',
+                'type' => 'mediaselection',
                 'default' => 'application/layouts/esportlayout/images/banner/pic2.jpg',
                 'description' => 'descSlider',
                 ],
@@ -129,7 +129,7 @@ class Config extends \Ilch\Config\Install
                 'description' => 'descSliderText',
                 ],
             'slider3' => [
-                'type' => 'text',
+                'type' => 'mediaselection',
                 'default' => 'application/layouts/esportlayout/images/banner/pic3.jpg',
                 'description' => 'descSlider',
                 ],

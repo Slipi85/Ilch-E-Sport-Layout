@@ -4,6 +4,7 @@ return [
     'contact' => 'Kontakt',
     'imprint' => 'Impressum',
     'privacy' => 'Datenschutz',
+    'logourl' => 'Logo',
     'descSlider' => 'Empfehlung: 680px × 280px',
     'descSliderText' => 'max. 40 Zeichen',
     'button1' => 'Erster Button',

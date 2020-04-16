@@ -4,6 +4,7 @@ return [
     'contact' => 'Contact',
     'imprint' => 'Imprint',
     'privacy' => 'Privacy',
+    'logourl' => 'Logo',
     'button1' => 'First Button',
     'button1url' => 'Button Link',
     'button1color' => 'Button Color',
