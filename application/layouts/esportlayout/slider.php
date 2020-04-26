@@ -40,6 +40,6 @@
   <style>
     .btn1 {background:<?=$this->getLayoutSetting('button1color')?>;}.btn1:hover {background:<?=$this->getLayoutSetting('button1hover')?>;}
     .btn2 {background:<?=$this->getLayoutSetting('button2color')?>;}.btn2:hover {background:<?=$this->getLayoutSetting('button2hover')?>;}
-    .btn2 {background:<?=$this->getLayoutSetting('button3color')?>;}.btn2:hover {background:<?=$this->getLayoutSetting('button3hover')?>;}
+    .btn3 {background:<?=$this->getLayoutSetting('button3color')?>;}.btn3:hover {background:<?=$this->getLayoutSetting('button3hover')?>;}
   </style>
 </div>

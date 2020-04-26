@@ -29,7 +29,7 @@ return [
     'slider3' => 'Third Slider',
     'slider3heading' => 'Headline Slider',
     'slider3text' => 'Text Slider',
-    'descSlider' => 'Recommendation: 680px × 280px',
+    'descSlider' => 'Recommendation: 1920px x 1080px',
     'descSliderText' => 'max. 40 characters',
     'color' => 'Color of hyperlink',
     'hover' => 'Hover of hyperlink',

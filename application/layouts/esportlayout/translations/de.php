@@ -5,7 +5,7 @@ return [
     'imprint' => 'Impressum',
     'privacy' => 'Datenschutz',
     'logourl' => 'Logo',
-    'descSlider' => 'Empfehlung: 680px × 280px',
+    'descSlider' => 'Empfehlung: 1920px x 1080px',
     'descSliderText' => 'max. 40 Zeichen',
     'button1' => 'Erster Button',
     'button1url' => 'Button Link',
