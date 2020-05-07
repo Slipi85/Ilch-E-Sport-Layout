@@ -6,7 +6,7 @@ class Config extends \Ilch\Config\Install
 {
     public $config = [
         'name' => 'E-Sport Layout',
-        'version' => '1.0.8',
+        'version' => '1.0.9',
         'ilchCore' => '2.1.32',
         'author' => 'Slipi',
         'link' => 'https://www.ilch.de',
