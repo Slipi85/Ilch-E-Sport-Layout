@@ -29,7 +29,7 @@ class Config extends \Ilch\Config\Install
                 'description' => '',
                 ],
             'button1url' => [
-                'type' => 'text',
+                'type' => 'url',
                 'default' => 'https://www.ilch.de/',
                 'description' => '',
                 ],
@@ -54,7 +54,7 @@ class Config extends \Ilch\Config\Install
                 'description' => '',
                 ],
             'button2url' => [
-                'type' => 'text',
+                'type' => 'url',
                 'default' => 'https://www.google.de/',
                 'description' => '',
                 ],
@@ -79,7 +79,7 @@ class Config extends \Ilch\Config\Install
                 'description' => '',
                 ],
             'button3url' => [
-                'type' => 'text',
+                'type' => 'url',
                 'default' => 'https://github.com/IlchCMS/Ilch-2.0/wiki',
                 'description' => '',
                 ],
@@ -143,17 +143,12 @@ class Config extends \Ilch\Config\Install
                 'default' => 'Sollte es Probleme geben, besuchen sie uns im Forum, und ihnen wird geholfen.',
                 'description' => 'descSliderText',
                 ],
-            'slider3text' => [
-                'type' => 'text',
-                'default' => 'Sollte es Probleme geben, besuchen sie uns im Forum, und ihnen wird geholfen.',
-                'description' => 'descSliderText',
-                ],
-            'color' => [
+            'linkColor' => [
                 'type' => 'colorpicker',
                 'default' => '#ffffff',
                 'description' => 'linkColorDescp',
               ],
-            'hover' => [
+            'linkHover' => [
                 'type' => 'colorpicker',
                 'default' => '#666666',
                 'description' => 'linkHoverDescp',

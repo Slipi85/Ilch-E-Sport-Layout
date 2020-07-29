@@ -54,7 +54,7 @@ if ($this->getUser()) {
               <h3><?=$this->escape($article->getTeaser()) ?></h3>
           <?php endif; ?>
           <h2><?=$this->escape($article->getTitle()) ?></h2><br />
-          <a href="<?=$this->getUrl(['action' => 'show', 'id' => $article->getId()]) ?>" class="read-more">read more</a>
+          <a href="<?=$this->getUrl(['action' => 'show', 'id' => $article->getId()]) ?>" class="read-more"><?=$this->getTrans('readMore') ?></a>
 
           <?php $content = $article->getContent(); ?>
 
