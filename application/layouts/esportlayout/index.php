@@ -30,8 +30,8 @@
       });
   </script>
   <style>
-  a {color:<?=$this->getLayoutSetting('color') ?>;}
-  a:hover {color:<?=$this->getLayoutSetting('hover') ?>;}
+  a {color:<?=$this->getLayoutSetting('linkColor') ?>;}
+  a:hover {color:<?=$this->getLayoutSetting('linkHover') ?>;}
   </style>
 </head>
 
