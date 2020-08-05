@@ -33,7 +33,10 @@
     <form class="form-horizontal" method="post">
         <h1 class="text-center"><?=$this->getTrans('menuLogin') ?></h1>
         <?=$this->getTokenField() ?>
-        <input type="hidden" name="login_redirect_url" value="<?=$this->escape($this->get('redirectUrl')) ?>" />
+        <?php
+        $escapedredirectUrl = $this->escape($this->get('redirectUrl'));
+        ?>
+        <input type="hidden" name="login_redirect_url" value="<?=(!empty($escapedredirectUrl)?$escapedredirectUrl:$this->getUrl(['module' => 'article', 'controller' => 'index', 'action' => 'index'])) ?>" />
         <div class="form-group <?=$this->validation()->hasError('login_emailname') ? 'has-error' : '' ?>">
             <div class="col-lg-12" for="login_emailname">
                 <div class="input-group inlog">
