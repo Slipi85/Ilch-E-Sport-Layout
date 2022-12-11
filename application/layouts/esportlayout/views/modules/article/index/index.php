@@ -11,15 +11,7 @@ if ($this->getUser()) {
 
 <h1><?=$this->getTrans('menuArticle') ?></h1>
 <?php if ($articles != ''):
-    $displayedArticles = 0;
-
     foreach ($articles as $article):
-        if (!is_in_array($this->get('readAccess'), explode(',', $article->getReadAccess())) && $adminAccess == false) {
-            continue;
-        }
-
-        $displayedArticles++;
-
         $date = new \Ilch\Date($article->getDateCreated());
         $commentsCount = $commentMapper->getCountComments(sprintf(Modules\Article\Config\Config::COMMENT_KEY_TPL, $article->getId()));
         $image = $article->getImage();
@@ -70,13 +62,9 @@ if ($this->getUser()) {
         </div>
       </div>
     <?php endforeach; ?>
-    <?php if ($displayedArticles > 0) : ?>
         <div class="pull-right">
             <?=$this->get('pagination')->getHtml($this, ['action' => 'index']) ?>
         </div>
-    <?php else: ?>
-        <?=$this->getTrans('noArticles') ?>
-    <?php endif; ?>
 <?php else: ?>
     <?=$this->getTrans('noArticles') ?>
 <?php endif; ?>
