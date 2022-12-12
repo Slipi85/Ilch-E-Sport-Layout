@@ -11,6 +11,7 @@ if ($this->getUser()) {
 
 <h1><?=$this->getTrans('menuArticle') ?></h1>
 <?php if ($articles != ''):
+    $displayedArticles = 0;
     foreach ($articles as $article):
         $date = new \Ilch\Date($article->getDateCreated());
         $commentsCount = $commentMapper->getCountComments(sprintf(Modules\Article\Config\Config::COMMENT_KEY_TPL, $article->getId()));
