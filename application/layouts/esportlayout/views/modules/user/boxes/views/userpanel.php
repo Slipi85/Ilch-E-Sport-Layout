@@ -1,5 +1,5 @@
 <?php if ($this->getUser() !== null): ?>
-    
+    <div class="ilch--new-message"></div>
 	<a class="button" href="<?=$this->getUrl(['module' => 'user', 'controller' => 'panel', 'action' => 'index']) ?>">
 	    <i class="fa fa-user" aria-hidden="true"></i> <?=$this->getTrans('hello') ?> <?=$this->escape($this->getUser()->getName()) ?>
     </a>
@@ -26,4 +26,33 @@
         </a>
     <?php endif; ?>
 
+<?php endif; ?>
+<?php if ($this->getUser() !== null): ?>
+    <script>
+        $(document).ready(function () {
+            let notificationsDiv = $(".ilch--new-message"),
+                messageCheckLink = "<?=$this->getUrl(['module' => 'user', 'controller' => 'ajax','action' => 'checknewmessage']) ?>",
+                openFriendRequestsCheckLink = "<?=$this->getUrl(['module' => 'user', 'controller' => 'ajax','action' => 'checknewfriendrequests']) ?>",
+                globalStore = [];
+
+            function loadNotifications()
+            {
+                $.when(
+                    $.get(messageCheckLink, function(newMessages) {
+                        globalStore['newMessages'] = newMessages;
+                    }),
+
+                    $.get(openFriendRequestsCheckLink, function(newFriendRequests) {
+                        globalStore['newFriendRequests'] = newFriendRequests;
+                    }),
+                ).then(function() {
+                    notificationsDiv.html(globalStore['newMessages']);
+                    notificationsDiv.append(globalStore['newFriendRequests'])
+                });
+            }
+
+            loadNotifications();
+            setInterval(loadNotifications, 60000);
+        });
+    </script>
 <?php endif; ?>
