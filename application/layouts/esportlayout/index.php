@@ -110,22 +110,24 @@
   <!-- footer area -->
   <footer>
     <div class="container clearfix">
-      <div class="col-xs-12 col-sm-6 text-center">
-        <ul>
-          <li>&copy; Ilch 2.0</li>
-          <li>Ilch E-Sport Layout</li>
-          <li>CMS by <a href="https://www.ilch.de/">Ilch</a></li>
-        </ul>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 text-center">
+          <ul>
+            <li>&copy; Ilch 2.0</li>
+            <li>Ilch E-Sport Layout</li>
+            <li>CMS by <a href="https://www.ilch.de/">Ilch</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6 text-center">
+          <ul>
+            <li><a href="/"><?=$this->getTrans('home') ?></a></li>
+            <li><a href="<?=$this->getUrl(['module' => 'contact', 'controller' => 'index', 'action' => 'index']) ?>"><?=$this->getTrans('contact') ?></a></li>
+            <li><a href="<?=$this->getUrl(['module' => 'imprint', 'controller' => 'index', 'action' => 'index']) ?>"><?=$this->getTrans('imprint') ?></a></li>
+            <li><a href="<?=$this->getUrl(['module' => 'privacy', 'controller' => 'index', 'action' => 'index']) ?>"><?=$this->getTrans('privacy') ?></a></li>
+          </ul>
+        </div>
+        <a href="#top" class="totop"><div class="innertop"></div></a>
       </div>
-      <div class="col-xs-12 col-sm-6 text-center">
-        <ul>
-          <li><a href="/"><?=$this->getTrans('home') ?></a></li>
-          <li><a href="<?=$this->getUrl(['module' => 'contact', 'controller' => 'index', 'action' => 'index']) ?>"><?=$this->getTrans('contact') ?></a></li>
-          <li><a href="<?=$this->getUrl(['module' => 'imprint', 'controller' => 'index', 'action' => 'index']) ?>"><?=$this->getTrans('imprint') ?></a></li>
-          <li><a href="<?=$this->getUrl(['module' => 'privacy', 'controller' => 'index', 'action' => 'index']) ?>"><?=$this->getTrans('privacy') ?></a></li>
-        </ul>
-      </div>
-      <a href="#top" class="totop"><div class="innertop"></div></a>
     </div>
   </footer><!-- end footer area -->
 
