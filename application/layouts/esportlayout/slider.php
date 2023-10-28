@@ -8,7 +8,7 @@
           <h1 class="esporth1 h1_1"><?=$this->getLayoutSetting('slider1heading') ?></h1>
           <p><?=$this->getLayoutSetting('slider1text') ?></p>
             <?php if ($this->getLayoutSetting('button1switch') == '1') { ?>
-                <a target="_blank" href="<?=$this->getLayoutSetting('button1url')?>" class="buttonlink btn btn1"><?=$this->getLayoutSetting('button1')?></a>
+                <a target="_blank" href="<?=$this->getLayoutSetting('button1url')?>" class="buttonlink btn btn1 btn-sm"><?=$this->getLayoutSetting('button1')?></a>
             <?php } ?>
         </div>
       </div>
@@ -22,7 +22,7 @@
           <h1 class="esporth1 h1_1"><?=$this->getLayoutSetting('slider2heading') ?></h1>
           <p><?=$this->getLayoutSetting('slider2text') ?></p>
             <?php if ($this->getLayoutSetting('button2switch') == '1') { ?>
-                 <a target="_blank" href="<?=$this->getLayoutSetting('button2url')?>" class="buttonlink btn btn2"><?=$this->getLayoutSetting('button2')?></a>
+                 <a target="_blank" href="<?=$this->getLayoutSetting('button2url')?>" class="buttonlink btn btn2 btn-sm"><?=$this->getLayoutSetting('button2')?></a>
             <?php } ?>
         </div>
       </div>
@@ -36,7 +36,7 @@
           <h1 class="esporth1 h1_1"><?=$this->getLayoutSetting('slider3heading') ?></h1>
           <p><?=$this->getLayoutSetting('slider3text') ?></p>
             <?php if ($this->getLayoutSetting('button3switch') == '1') { ?>
-             <a target="_blank" href="<?=$this->getLayoutSetting('button3url')?>" class="buttonlink btn btn3"><?=$this->getLayoutSetting('button3')?></a>
+             <a target="_blank" href="<?=$this->getLayoutSetting('button3url')?>" class="buttonlink btn btn3 btn-sm"><?=$this->getLayoutSetting('button3')?></a>
             <?php } ?>
         </div>
       </div>
