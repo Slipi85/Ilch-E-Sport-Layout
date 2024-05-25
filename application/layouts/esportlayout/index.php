@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="de">
+<?php /** @var $this \Ilch\Layout\Frontend */ ?><!DOCTYPE html>
+<html lang="de" data-bs-theme="dark">
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
 <!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
@@ -14,7 +14,7 @@
   <link href="<?=$this->getLayoutUrl('css/flexslider.css') ?>" rel="stylesheet">
   <link href="<?=$this->getLayoutUrl('css/style.css') ?>" rel="stylesheet">
   <?=$this->getCustomCSS() ?>
-  <script src="<?=$this->getVendorUrl('twbs/bootstrap/dist/js/bootstrap.min.js') ?>"></script>
+  <script src="<?=$this->getVendorUrl('twbs/bootstrap/dist/js/bootstrap.bundle.min.js') ?>"></script>
   <script src="<?=$this->getLayoutUrl('js/modernizr.min.js') ?>"></script>
   <script type="text/javascript">
     $(document).ready(function () {
@@ -53,7 +53,7 @@
           <ul class="list-unstyled"><li><a href="/"><img id="logo" src="<?=$this->getBaseUrl($this->getLayoutSetting('logourl')) ?>" alt="logo"></a></li></ul>
           </div>
           <div id="topnav" role="navigation">
-            <div class="menu-toggle pull-right"><i class="fa fa-bars" aria-hidden="true"></i></div>
+            <div class="menu-toggle float-end"><i class="fa-solid fa-bars" aria-hidden="true"></i></div>
             <ul class="srt-menu" id="menu-main-navigation">
             <?php
               echo $this->getMenu(1,
@@ -83,19 +83,19 @@
   <!-- main area -->
   <div id="main" class="container">
     <div class="esport">
-      <div class="row">
+      <div class="row-esportlayout">
         <div class="col-xs-12 col-sm-9 content">
-          <div class="panel panel-default">
+          <div class="card">
             <div class="_main-bar"><?=$this->getHmenu() ?></div>
-            <div class="panel-body">
+            <div class="card-body">
               <?=$this->getContent() ?>
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-3 sidebar">
+        <div class="col-xs-12 col-sm-3 sidebar-esportlayout">
           <?php
           echo $this->getMenu(2,
-            '<div class="panel panel-default">
+            '<div class="card">
             <div class="box-header">%s</div>
             <div class="box-body">%c</div>
             </div>');
@@ -108,9 +108,9 @@
   <!-- end main  -->
 
   <!-- footer area -->
-  <footer>
+  <footer id="footer-esportlayout">
     <div class="container clearfix">
-      <div class="row">
+      <div class="row row-esportlayout">
         <div class="col-xs-12 col-sm-6 text-center">
           <ul>
             <li>&copy; Ilch 2.0</li>
@@ -132,7 +132,6 @@
   </footer><!-- end footer area -->
 
   <?=$this->getFooter() ?>
-  <script>window.jQuery || document.write('<script src="<?=$this->getVendorUrl('components/jquery/jquery.min.js') ?>"></script>
   <script src="<?=$this->getLayoutUrl('js/jquery.flexslider.min.js') ?>" defer></script>
   <!-- settings -->
   <script src="<?=$this->getLayoutUrl('js/main.js') ?>"></script>
