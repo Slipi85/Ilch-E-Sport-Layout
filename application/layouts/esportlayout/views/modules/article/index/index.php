@@ -40,9 +40,9 @@ if ($this->getUser()) {
           <?php endif; ?>
         </div>
         <div class="news-body">
-          <i class="fa fa-calendar" title="<?=$this->getTrans('date') ?>"></i> <a href="<?=$this->getUrl(['controller' => 'archive', 'action' => 'show', 'year' => $date->format("Y", true), 'month' => $date->format("m", true)]) ?>"><?=$date->format('d.', true) ?> <?=$this->getTrans($date->format('F', true)) ?> <?=$date->format('Y', true) ?></a>
-          &nbsp;&nbsp;<i class="fa fa-folder-open-o" title="<?=$this->getTrans('cats') ?>"></i> <?=rtrim($categories, ', '); ?>
-          &nbsp;&nbsp;<i class="fa fa-eye" title="<?=$this->getTrans('hits') ?>"></i> <?=$article->getVisits() ?>
+          <i class="fa-solid fa-calendar" title="<?=$this->getTrans('date') ?>"></i> <a href="<?=$this->getUrl(['controller' => 'archive', 'action' => 'show', 'year' => $date->format("Y", true), 'month' => $date->format("m", true)]) ?>"><?=$date->format('d.', true) ?> <?=$this->getTrans($date->format('F', true)) ?> <?=$date->format('Y', true) ?></a>
+          &nbsp;&nbsp;<i class="fa-regular fa-folder-open" title="<?=$this->getTrans('cats') ?>"></i> <?=rtrim($categories, ', '); ?>
+          &nbsp;&nbsp;<i class="fa-regular fa-eye" title="<?=$this->getTrans('hits') ?>"></i> <?=$article->getVisits() ?>
           <?php if ($article->getTeaser()): ?>
               <h3><?=$this->escape($article->getTeaser()) ?></h3>
           <?php endif; ?>
@@ -55,7 +55,7 @@ if ($this->getUser()) {
               <?php $contentParts = explode('[PREVIEWSTOP]', $content); ?>
               <?=$this->purify(reset($contentParts)) ?>
               <br />
-              <a href="<?=$this->getUrl(['action' => 'show', 'id' => $article->getId()]) ?>" class="pull-right"><?=$this->getTrans('readMore') ?></a>
+              <a href="<?=$this->getUrl(['action' => 'show', 'id' => $article->getId()]) ?>" class="float-end"><?=$this->getTrans('readMore') ?></a>
           <?php else: ?>
             <!--  <?=$this->purify($content) ?>-->
           <?php endif; ?>
@@ -63,7 +63,7 @@ if ($this->getUser()) {
         </div>
       </div>
     <?php endforeach; ?>
-        <div class="pull-right">
+        <div class="float-end">
             <?=$this->get('pagination')->getHtml($this, ['action' => 'index']) ?>
         </div>
 <?php else: ?>
