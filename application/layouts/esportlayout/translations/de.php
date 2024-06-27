@@ -1,4 +1,5 @@
 <?php
+
 return [
     'home' => 'Startseite',
     'contact' => 'Kontakt',
